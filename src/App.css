@@ -1,0 +1,104 @@
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+} */
+
+.nav{
+  display:flex;
+  box-shadow: 0px 2.9px 7.5px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width:auto;
+}
+
+.grid{
+  display:flex;
+  max-width: auto;
+  align-items:center;
+  justify-content: center;
+
+}
+.grid--fotos{
+  margin: 1rem 1rem 0rem 1rem;
+  padding: 1rem 1rem 0rem 1rem;
+  max-width: 400px;
+  align-self: center;
+}
+
+.info{
+  display:flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+  max-width: 400px;
+  align-self:center;
+}
+
+.info--title{
+  margin:0;
+}
+
+.card--list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+.card {
+  width: 175px;
+  font-size: 12px;
+  flex: 0 0 auto;         /* ADD */
+  display: flex;          /* ADD */
+  flex-direction: column; /* ADD */
+  position:relative;
+}
+
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.card--image {
+  width: 100%;
+  border-radius: 9px;
+  margin-bottom: 9px;
+}
+
+/* ADD */
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card--stats {
+  display: flex;
+  align-items: center;
+}
+
+.gray {
+  color: #918E9B;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.card--star {
+  height: 14px;
+}
+
+/* ADD */
+.card--price {
+  margin-top: auto;
+}
